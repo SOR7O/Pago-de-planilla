@@ -20,6 +20,18 @@
         <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=HorasET,Mode=TwoWay}"/>
         <Label Content="Pago por hora de trabajo" HorizontalAlignment="Left"/>
         <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=PagoHT,Mode=TwoWay}"/>
+        <TextBlock><Label Content="Sueldo sin deduciones"/>
+        <Label Content="Sueldo por horas extra"/>
+            <Label Content="Deduciones del empleado"/>
+            <Label Content="Sueldo total"/>
+        </TextBlock>
+        <TextBlock>
+            <TextBox Width="130" Text="{Binding Path=SueldoSinDeducciones,Mode=TwoWay}"/>
+            <TextBox Width="135" Text="{Binding Path=HorasExtra,Mode=TwoWay}"/>
+            <TextBox Width="140" Text="{Binding Path=Deducciones,Mode=TwoWay}"/>
+            <TextBox Width="140" Text="{Binding Path=SueldoTotal,Mode=TwoWay}"/>
+        </TextBlock>
+        
 
     </StackPanel>
 </Window>
