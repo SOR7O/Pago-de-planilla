@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:Planilla"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Background="Aquamarine">
+        <Label Content="PAGO DE PLANILLA" HorizontalAlignment="Center" FontSize="20" Margin="5"/>
+        <Label Content="Nombre del empleado" HorizontalAlignment="Left"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=NombreEmpleado,Mode=TwoWay}"/>
+        <Label Content="Identidad" HorizontalAlignment="Left"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=Identidad,Mode=TwoWay}"/>
+        <Label Content="Horas trabajadas"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=HorasTrabajadas,Mode=TwoWay}"/>
+        <Label Content="Pago por hora normal de trabajo" HorizontalAlignment="Left"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=PagoHN,Mode=TwoWay}"/>
+        <Label Content="Horas extras trabajadas" HorizontalAlignment="Left"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=HorasET,Mode=TwoWay}"/>
+        <Label Content="Pago por hora de trabajo" HorizontalAlignment="Left"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=PagoHT,Mode=TwoWay}"/>
+
+    </StackPanel>
 </Window>
