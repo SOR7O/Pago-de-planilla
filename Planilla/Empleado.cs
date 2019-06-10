@@ -20,7 +20,7 @@ namespace Planilla
         private string horasExtra;
         private string deduciones;
         private string sueldoTotal;
-        private string PropertyChanged;
+
 
         public string NombreEmpleado
         {
@@ -97,11 +97,11 @@ namespace Planilla
                 double sueldoTotal= sueldoSinDeducciones - Total1 - Total2;
                 sueldoTotal.ToString();
             } }
-        public event PropertyChangedEventArgs PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string property)
         {
-            if(PropertyChanged != null)
-                PropertyChanged(this,new ProgressChangedEventHandler(property)
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
     }
 }
